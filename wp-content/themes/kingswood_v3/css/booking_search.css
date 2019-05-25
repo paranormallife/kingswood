@@ -1,0 +1,251 @@
+/* Booking Search Form on Homepage */
+
+#booking_search_ajax {
+    margin-bottom: 0!important;
+}
+
+#booking-search {
+	background-color: whitesmoke;
+	border: 0;
+	border-radius: 0;
+	display: table;
+	margin: 0;
+	padding: 1em 0;
+	width: 100%;
+}
+
+#booking-search .title {
+	display: none;
+	font: 1em 'Oswald', sans-serif;
+	margin-bottom: 10px;
+	padding: 0 5vw;
+	text-transform: uppercase;
+}
+
+.booking-search-form::before {
+	content: "Plan your getaway:";
+	display: block;
+	font: 1em 'Oswald', sans-serif;
+	margin-bottom: 10px;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.booking-search-form {
+	display: block;
+	padding: 0 5vw;
+	position: relative;
+	width: 90vw;
+}
+
+.booking-search-form .guests {
+	display: none;
+}
+
+.booking-search-form input {
+	height: 3em!important;
+	padding: 0 2%!important;
+}
+
+.booking-search-form input {
+	-webkit-appearance: none;
+	appearance: none;
+	border: 0;
+	border-radius: 0;
+	clear: none;
+	display: inline-block;
+	float: left;
+	height: 30px !important;
+	margin: 0 1vw 0 0!important;
+	max-width: 150px;
+	opacity: 0.75;
+	width: 32%!important;
+}
+
+.booking-search-form input[type=text] {
+	box-shadow: 1px 1px 0 silver inset;
+}
+
+.booking-search-form input[type=text]:focus {
+	opacity: 1;
+	outline: none;
+}
+
+
+.booking-search-form input[type=button] {
+	background-color: orangered;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font: 1em 'Oswald', sans-serif;
+	margin-right: 0!important;
+	width: auto !important;
+}
+
+.booking-search-form label {
+	display: none;
+}
+
+/* Search Results â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€” */
+
+.booking_search_ajax_container h2 {
+	font: 1.5em 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+.booking_search_result_item {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	box-sizing: border-box;
+	font-size: 0.8em !important;
+}
+
+.booking-search-listing .image .booking_featured_image {
+	border: 0 !important;
+	clear: both;
+	float: none;
+	margin: 0 !important;
+	padding: 0;
+	width: 100% !important;
+}
+
+.booking_search_result_item .description {
+	margin-bottom: 5vw;
+	padding: 2.5vw;
+}
+
+.booking_search_result_item .description .booking_search_result_title {
+    display: inline-block;
+    float: left;
+    font: normal 1em 'Oswald', sans-serif;
+    margin: 0 2em 0 0;
+    text-transform: uppercase;
+}
+
+.booking_search_result_item .description .booking_search_result_info {
+    font-size: 1em;
+    font-style: normal;
+    margin: 0;
+    text-align: justify;
+}
+
+.booking_search_result_item .price {
+	background-color: whitesmoke;
+	display: table;
+	width: 100%;
+}
+
+.booking_search_result_item .price span.booking_search_result_original_cost_hint {
+	display: inline-block;
+	font: normal 1em 'Oswald', sans-serif;
+	padding: 1em 0 1em 5vw;
+}
+
+.booking_search_result_item .wpdevbk .price a {
+    background: orangered !important;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none !important;
+    color: white !important;
+    display: block;
+    float: right;
+    font: 600 1em 'Oswald', sans-serif !important;
+    letter-spacing: 1px;
+    line-height: 1em;
+    margin: 0 !important;
+    min-width: 50%;
+    padding: 1em 0;
+    text-shadow: none !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.booking_search_result_item .wpdevbk .price a:hover {
+	text-shadow: 1px 1px 1px black !important;
+}
+
+
+
+@media (min-width: 650px) {
+	
+	#booking-search {
+		padding: 0 5vw;
+		width: 90vw;
+	}
+	
+	#booking-search .title {
+		display: none;
+	}
+	
+	.booking-search-form::before {
+		display: block;
+		float: left;
+		margin-right: 1em;
+	}
+	
+	.booking-search-form {
+		display: inline-block;
+		float: left;
+		padding: 1em 0;
+		width: 100%;
+	}
+	
+
+	.booking_search_ajax_container center {
+		-webkit-column-span: all;
+		column-span: all;
+	}
+	
+	#home .booking_search_result_item {
+		-webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+		break-inside: avoid;
+	}
+	
+	#home .booking_search_result_item:last-of-type {
+		clear: right;
+	}
+
+	.booking_search_ajax_container {
+		display: grid;
+		grid-auto-flow: row;
+		grid-column-gap: 1px;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto;
+	}
+	
+	.booking_search_ajax_container center {
+		grid-column-start: 1;
+  		grid-column-end: 3;
+	}
+	
+	.booking_search_result_item {
+		align-self: start;
+		height: 100%;
+		position: relative;
+	}
+
+	.booking_search_result_item .price {
+		position: absolute;
+		bottom: 0;
+	}	
+	
+}
+
+@media (min-width: 1020px) {
+
+	.booking_search_result_item:nth-of-type(3n+2) {
+		background-color: rgb(250,250,250);
+	}
+
+	.booking_search_ajax_container center {
+		grid-column-start: 1;
+  		grid-column-end: 4;
+	}
+
+	.booking_search_ajax_container {
+		grid-template-columns: 33.33% 33.33% 33.33%;
+	}
+	
+}

@@ -1,0 +1,137 @@
+/* Interactive Map Rules */
+
+#map {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: block;
+	height: 0;
+	margin: 0;
+	position: relative;
+	padding: 0 0 90% 0;
+	width: 100%;
+}
+
+#map a.map-marker {
+	/* background-color: rgba(255,255,0,0.5); */
+	color: black;
+	display: block;
+	max-height: 2%;
+	max-width: 2%;
+	overflow: hidden;
+	position: absolute;
+	text-decoration: none;
+	width: auto;
+	z-index: 1;
+}
+
+
+#map a.map-marker span {
+	background-color: white;
+	display: block;
+	margin: 2vw 0 0 2vw;
+	padding: 2.5vw;
+}
+
+#map a.map-marker span .image img {
+	max-width: 100%;
+}
+
+
+a.map-marker#cove-left {
+	left: 49%;
+    top: 40%;
+}
+
+a.map-marker#cove-right {
+	left: 52.5%;
+    top: 43%;
+}
+
+a.map-marker#deertrails {
+	left: 44%;
+	top: 39%;
+}
+
+a.map-marker#eagle-1 {
+	left: 48.5%;
+    top: 23%;
+}
+
+a.map-marker#eagle-2 {
+	left: 43%;
+    top: 22%;
+}
+
+a.map-marker#hogan-left {
+	left: 43%;
+    top: 30%;
+}
+
+a.map-marker#hogan-right {
+	left: 38%;
+    top: 28%;
+}
+
+a.map-marker#maples-left {
+	left: 34.5%;
+    top: 40%;
+}
+
+a.map-marker#maples-right {
+	left: 33.5%;
+    top: 35%;
+}
+
+a.map-marker#orchard-by-the-road {
+	left: 48%;
+    top: 54%;
+}
+
+a.map-marker#orchard-over-the-wall {
+	left: 50%;
+    top: 52%;
+}
+
+a.map-marker#overlook-far {
+	left: 30.25%;
+    top: 43%;
+}
+
+a.map-marker#overlook-near {
+	left: 36.5%;
+    top: 41.5%;
+}
+
+a.map-marker#spruce-i {
+	left: 45%;
+    top: 45.5%;
+}
+
+a.map-marker#spruce-ii {
+	left: 45.5%;
+    top: 48%;
+}
+
+a.map-marker#tamarack {
+	left: 44.5%;
+    top: 60%;
+}
+
+a.map-marker#the-pines-a-f-site {
+	left: 44%;
+    top: 52.5%;
+}
+
+@media ( min-width: 800px ) {
+	
+	#map a.map-marker:hover {
+		max-height: none;
+		max-width: 30%;
+		z-index: 2;
+	}
+	
+	#map a.map-marker:hover span {
+		margin: 0;
+	}	
+	
+}

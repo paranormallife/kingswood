@@ -1,0 +1,102 @@
+/* Campsites Grid */
+
+#campsites-grid {
+	display: table;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+}
+
+#campsites-grid a {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	display: block;
+	text-decoration: none;
+}
+
+#campsites-grid a h2 {
+	background-color: rgba(0,0,0,0.10);
+	color: black;
+	display: block;
+	font: 1em 'Oswald', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 2.5vw;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#campsites-grid .campsite-image {
+	background-position: center center;
+	background-size: cover;
+	display: block;
+	height: 0;
+	padding-top: 66.66%;
+	position: relative;
+	width: 100%;
+}
+
+#campsites-grid .campsite-image span {
+	background-color: rgba(0,0,0,0.5);
+	bottom: 0;
+	color: white;
+	display: table;
+	padding: 2.5%;
+	position: absolute;
+	width: 95%;
+	transition: background-color 0.5s linear 0s;
+}
+	
+#campsites-grid a:hover .campsite-image span {
+	background-color: orangered;
+}
+
+
+@media ( min-width: 540px ) and ( max-width: 799px ) {
+
+	#campsites-grid a {
+		float: left;
+		width: 50vw;
+		border-bottom: 1px solid white;
+		border-right: 1px solid white;
+	}
+	
+	#campsites-grid a:hover .campsite-image span {
+		background-color: orangered;
+	}
+	
+	#campsites-grid a:nth-of-type(odd) {
+		border-right: 0;
+		clear: left;
+	}
+	
+	#campsites-grid a h2 {
+		padding: 1em;
+	}
+
+}
+
+
+@media ( min-width: 800px ) {
+
+	#campsites-grid a {
+		float: left;
+		width: 33.33vw;
+		border-bottom: 1px solid white;
+		border-right: 1px solid white;
+	}
+	
+	#campsites-grid a:hover .campsite-image span {
+		background-color: orangered;
+	}
+	
+	#campsites-grid a:nth-of-type(3n+3) {
+		border-right: 0;
+	}
+	
+	#campsites-grid a h2 {
+		padding: 1em;
+	}
+
+}

@@ -1,0 +1,134 @@
+/* Booking form styles */
+
+#booking-form {
+	display: table;
+	width: 90%;
+}
+
+#booking-form .wpdevbk p {
+	font: 1em 'Noto Serif', serif;
+}
+
+#booking-form input,
+#booking-form select,
+#booking-form textarea {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none !important;
+	font: 1em 'Noto Serif', serif;
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+
+@media (max-width: 768px) {
+	/* Default overrides */
+	#booking-form .booking_form_div input,
+	#booking-form .booking_form_div select {
+		width: 100% !important;
+		margin: 0.5em 0 !important;
+	}
+
+}
+
+
+
+#booking-form input[type=text],
+#booking-form input[type=email],
+#booking-form .wpdevbk input[type=text],
+#booking-form .wpdevbk input[type=email] {
+	border-bottom: 2px solid black;
+	display: block;
+	padding: 0.25em 0;
+	width: 100%;
+}
+
+#booking-form .wpdevbk select {
+	background-color: whitesmoke;
+	height: auto;
+	min-width: 50%;
+	padding: 0.5em;
+	width: auto;
+}
+
+#booking-form input[type=text]:focus,
+#booking-form input[type=email]:focus {
+	border-bottom: 2px solid orangered;
+	font-style: italic;
+}
+
+#booking-form .halves span {
+	display: block;
+	float: left;
+	width: 48.75%;
+}
+
+#booking-form .halves span:nth-of-type(even) {
+	margin-left: 2.5%;
+}
+
+#booking-form .thirds span {
+	display: block;
+	float: left;
+	margin-left: 2.5%;
+	width: 31.666%;
+}
+
+#booking-form .thirds span:nth-of-type(3n+1) {
+	margin-left: 0;
+}
+
+#booking-form .booking_form textarea {
+	background-color: whitesmoke;
+	height: 4em;
+	padding: 2.5%;
+	width: 95%;
+}
+
+#booking-form .booking_form input[type="button"],
+#booking-form .wpdevbk .btn {
+	background: orangered;
+	color: white;
+	display: block;
+	float: right;
+	max-width: 50%;
+	padding: 0.5em;
+	text-align: center;
+	text-shadow: none;
+}
+
+#booking-form .tally {
+	display: block;
+	float: left;
+	max-width: 50%;
+}
+
+#booking-form .tally span {
+	font: 1.5em 'Oswald', serif;
+}
+
+#booking-form .tally span .wpbc-currency-symbol {
+	font-size: 100%;
+}
+
+@media ( min-width: 800px ) {
+
+	#booking-form {
+		width: 100%;
+	}
+	
+	#booking-form .campers,
+	#booking-form .visitors {
+		display: block;
+		float: left;
+		width: 48.75%;
+	}
+	
+	#booking-form .visitors {
+		margin-left: 2.5%;
+	}
+
+}

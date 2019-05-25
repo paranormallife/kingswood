@@ -1,0 +1,87 @@
+/* Footer Styles */
+
+#copyright {
+	display: table;
+	color: #666666;
+	margin: 5vw;
+	width: 90%;
+}
+
+#copyright div {
+	display: block;
+}
+
+#copyright img {
+	display: block;
+	margin: 0 auto;
+	max-height: 100px;
+	max-width: 500px;
+}
+
+#copyright a {
+	color: #666666;
+}
+
+#copyright p {
+	margin: 0;
+}
+
+#footer-nav {
+	display: table;
+	margin: 0 5vw;
+	width: 90vw;
+}
+
+#footer-nav ul {
+	list-style-type: none;
+	margin: 5vw 0 0 0;
+	padding: 0;
+}
+
+#footer-nav ul li a {
+	background-color: rgba(0,0,0,0.10);
+	color: black;
+	display: block;
+	font: 1em 'Oswald', sans-serif;
+	font-weight: 300;
+	margin: 0 0 0.25em 0;
+	padding: 0.25em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.umc-logo {
+	display: none;
+}
+
+@media ( min-width: 800px ) {
+	
+	#copyright {
+		width: 90%;
+	}
+	
+	#copyright div {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	
+	#copyright img {
+		max-width: 300px;
+	}
+	
+	#footer-nav ul li {
+		display: inline-block;
+		margin: 0 1em 0 0;
+	}
+	
+	#footer-nav ul li a {
+		background-color: transparent;
+		display: inline;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#footer-nav ul li a:hover {
+		color: orangered;
+	}	
+}

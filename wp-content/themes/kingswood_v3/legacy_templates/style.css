@@ -1,0 +1,241 @@
+/*
+Theme Name: Kingswood 3.0
+Theme URI:
+Author: Elliot Toman
+Author URI: http://asubtleweb.com
+Description: A new custom theme developed for Kingswood Campsite
+Version: 1.0
+License: 
+License URI: 
+Tags: 
+Text Domain: 
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300|Sanchez:400,400italic);
+
+* { margin: 0px; padding: 0px; }
+
+body, html { height: 100%; }
+
+body { font: 400 100% 'Sanchez', monospace; color: black; margin: 0px; background-color: #D3D0BF; }
+
+a { text-decoration: none; color: #663; }
+
+article, section { display: block; float: none; clear: both; margin-bottom: 20px;}
+article, article p { padding-bottom: 10px; }
+
+h1, h2 { font-family: 'Oswald', sans-serif; font-weight: 400; text-transform: uppercase; }
+h1 { font-size: 1.25em;  }
+h1, h1 a { color: #660;  }
+h2 { font-size: 1em; }
+h3 { display: block; font-size: 1em; font-weight: 400; text-transform: uppercase; border-bottom: 1px solid black; }
+
+hr { display: block; height: 0px; border: 0px; border-bottom: 1px dotted black; margin: 10px 0px; background-color: transparent; color: white; }
+
+article ol,
+article ul { display: table; margin-left: 20px; }
+article li { padding-left: 10px; }
+
+img a { border: 0px; }
+
+header { display: none; }
+header#mobile { display: block; }
+header#mobile h1, header#mobile h2 { display: block; background-color: white; padding: 2.5%; width: 95%; }
+header#mobile h2 { background-color: #CC9; }
+
+#mobilesearch { display: block; position: absolute; top: 0px; left: 0px; z-index: 99; }
+#mobilesearch input { display: block; border: 0px; margin: 5%; padding: 0px;  background-color: transparent; font: 400 1em 'Sanchez', monospace; color: white; text-transform: uppercase;  }
+
+#page.search #search input { display: none; /* 'cause it's redundant. */ }
+
+.gallery .wp-pagenavi { display: none; }
+
+#menu_open { background-color: black; position: relative; z-index: 5; }
+#mainmenu { display: block; overflow: hidden; max-height: 0px; width: 100%; transition: all 2s ease; -webkit-transition: all 2s ease; }
+#menu_open:target #mainmenu { max-height: 9999px; }
+#menu_open_button, #menu_close_button { position: relative; display: block; width: 95%; padding: 2.5%; text-align: right; }
+#menu_open_button a, #menu_close_button a { color: white; }
+#menu_close_button,
+#menu_open:target #menu_open_button { display: none; }
+#menu_open:target #menu_close_button { display: block; }
+#menu_open ul { margin: 2.5%; list-style-type: none; }
+#menu_open li a { display: block; color: white; opacity: .75; border-bottom: 1px solid #333; padding: .5%; }
+#menu_open li ul li a { border: 0px; margin-left: 5%; }
+
+#header_menu li .navhover { display: none; }
+
+.breadcrumbs_mobile { display: block; width: 95%; padding: 0% 2.5% 2.5% 2.5%; font: 400 .8em 'Sanchez', serif; text-align: left; background-color: white; }
+.breadcrumbs_mobile a { font-style: italic; }
+
+#page { display: table; width: 95%; margin: 2.5%; }
+
+#page article { display: block; max-width: 100%; }
+
+#page article h1 { margin-bottom: 10px; }
+
+#page article strong { font-weight: 400; text-decoration: underline; }
+
+#page article em { font-style: italic; }
+
+#page article blockquote { margin: 20px; font-style: italic; }
+
+#page article img  { display: block; max-width: 99.5%!important; height: auto; }
+
+#page article .wp-caption { display: block; max-width: 99.5%!important; width: inherit!important; }
+
+#page article ul, #page article ol { display: block; margin: 20px; }
+
+.wp-caption-text { font-style: italic; }
+
+.alignleft, .alignright, .alignnone, .aligncenter { max-width: 99.5%!important; height: auto; margin: 10px 0px; }
+
+.column { display: table; margin-bottom: 2.5%; }
+.column .thumbnail { display: block; width: 100%; height: 0px; padding-top: 66%; overflow: hidden; background-size: cover; background-position: center center; background-repeat: no-repeat; position: relative; }
+.column .thumbnail img { position: absolute; top: 0px; left: 0px; width: 100%; height: auto; opacity: 0; }
+.column h2 { display: block; width: 90%; padding: 5%; background-color: black; font: 400 1em 'Sanchez', monospace; text-transform: none; }
+.column h2 a { color: white; }
+.column.feature h2 { width: 100%; padding: 5% 0%; background-color: transparent; text-transform: uppercase; }
+.column.feature h2 a { color: black; }
+
+.gallery { display: block; float: none; clear: both; }
+.gallery:after { visibility: hidden; display: block; height: 0; content: ""; clear: both; }
+.gallery_item { background-size: cover; }
+
+.column { display: block; width: 100%; }
+.thumbnail { display: block; width: 100%; height: 0px; padding-top: 33%; }
+
+.thumbnail a span.summary { display: none; }
+
+#copyright { float: none; clear: both; display: block; width: 95%; padding: 2.5%; margin-top: 10%; border-top: 1px solid #996; }
+
+#booking-form { display: table; margin: 0px; padding: 0px; width: 100%; }
+#booking-form input[type=text],
+#booking-form input[type=email],
+#booking-form textarea { display: table; width: 97.5%; padding: 1.25%; background-color: white; border: 0px; border-radius: 0px; font: 1em 'Sanchez', monospace; line-height: 1em; height: auto; box-shadow: 0px; }
+#booking-form span { margin-bottom: 5px;  }
+.tally { display: table; width: 95%; padding: 2.5%; position: fixed; bottom: 0px; left: 0px; z-index: 9999; background-color: rgba(0,0,0,0.75); color: white; font: 300 1.25em 'Oswald', sans-serif; text-transform: uppercase; }
+
+#reservation-links ul { list-style-type: none; }
+#reservation-links li { margin: 5px 0px; }
+
+/* MEDIUM LAYOUT */
+@media screen and (min-width: 800px) {
+
+
+	header#mobile { display: none; }
+	#menu_open { background-color: transparent; }
+	#menu_open_button, #menu_close_button, #mobilesearch { display: none; }
+	#menu_open ul { margin: 0%; list-style-type: none; }
+	#menu_open li a { display: block; color: white; opacity: 1; border: 0px ; padding: 0%; }
+	#menu_open li ul li a { border: 0px; margin-left: 0%; }
+
+	header { display: block; width: 100%; position: relative; }
+	
+	.header_menu_container { display: table; width: 95%; padding: 10px 2.5%; height: 30px; background-color: white; position: relative; float: none; clear: both; }
+	
+	#header_menu h1 { display: table; float: left; width: 30%; margin-right: 2.5%; }
+	
+	#header_image_container, #header_image { display: block; height: 300px; width: 100%; z-index: 10; overflow: hidden; clear: both;  }
+	#header_image { background-size: cover; background-position: center center; background-repeat: no-repeat; overflow: hidden; }
+	#header_image img { opacity: 0; width: 100%; height: auto; }
+	
+	
+	#header_menu nav { display: table; width: 60%; float: left; text-align: left; margin-left: 2.5%; }
+	#header_menu nav ul, nav#mainmenu ul { list-style-type: none;  }
+	#header_menu nav li { display: inline; margin-right: 2.5%; }
+	#header_menu nav a, nav#mainmenu a { font: 400 1.25em 'Oswald', sans-serif; color: black; text-transform: uppercase; }
+	#header_menu li .navhover { display: block; width: 100%; position: absolute; top: 50px; left: 0px; background-color: black; background-color: rgba(0,0,0,0.6); color: white; text-align: left; max-height: 0px; overflow: hidden; transition: all 1s linear; -wekbkit-transition: all 1s linear; z-index: 99; }
+	#header_menu li:hover .navhover { max-height: 300px; min-height: 300px; }
+	#header_menu li a:hover { border-bottom: 3px solid black; }
+	#header_menu li .navhover article { margin: 20px; clear: none; }
+	#header_menu li .navhover.news article { width: 30%; margin: 2.5% 0% 2.5% 2.5%; float: left; }
+	#header_menu li .navhover.mission article {  margin: 2.5%; columns: auto 3; -webkit-columns: auto 3; -moz-columns: auto 3; }
+	#header_menu img { display: none; }
+	
+	header #search { display: block; width: 30%; position: absolute; top: 2.5%; right: 2.5%; background-color: white; }
+	#search input { display: block; border: 0px; font: 400 1.25em 'Oswald', sans-serif; text-transform: uppercase; padding: 0px; width: 100%;  }
+	header #search input { margin-top: 9px; }
+	header #search input:focus { border-bottom: 2px solid black; }
+	
+	#page.search #search input { display: block; width: 98%; padding: 1%; margin-bottom: 20px; opacity: .5; }
+	#page.search #search input:focus { opacity: 1; }
+	
+	
+	.alignleft, .alignright { max-width: 50%!important; height: auto; }
+	.alignleft { float: left; margin: 5px 10px 10px 0px; clear: left; }
+	.alignright { float: right; margin: 5px 0px 10px 10px; }
+	.alignnone,
+	.aligncenter { float: none; clear: both; margin: 10px 0px; max-width: 99.5%!important; height: auto; }
+		
+	.contenthover { display: block; width: 100%; position: absolute; top: 50px; left: 0px; background-color: black; background-color: rgba(0,0,0,0.6); color: white; text-align: left; height: 300px; }
+	
+	
+	nav#mainmenu { display: table; width: 30%; margin: 2.5%; float: left; }
+	nav#mainmenu li { display: block; }
+	nav#mainmenu ul li ul { overflow: hidden; max-height: 0px; transition: max-height 1s linear; }
+	nav#mainmenu ul li.current-menu-item a { color: #330; }
+	nav#mainmenu ul li:hover ul,
+	nav#mainmenu ul li.current-menu-item ul,
+	nav#mainmenu ul li.current-menu-ancestor ul,
+	nav#mainmenu ul li.current-page-ancestor ul { max-height: 999px; }
+	nav#mainmenu ul ul a,
+	nav#mainmenu ul li.current-menu-item ul a { display: block; font-size: 1em; color: #663; margin: 5px 0px 5px 10px; }
+	nav#mainmenu ul ul li.current-menu-item a,
+	nav#mainmenu ul ul li.current-page-ancestor a { color: white; }
+	nav#mainmenu ul a:hover { opacity: .8; }
+	
+	#page { display: table; float: right; width: 62.5%; margin: 2.5% 2.5% 0 0; }
+	
+	.column { display: table; width: 48%; margin-right: 4%; float: left; clear: none; }
+	.column:nth-of-type(even) { margin-right: 0%; }
+	
+	.thumbnail a span.summary { display: block; position: absolute; top: 0px; left: 0px; width: 90%; height: 90%; padding: 5%; background-color: black; color: white; font-size: 75%; opacity: 0;  }
+	.thumbnail a:hover span.summary { opacity: 0.8;  }
+	.thumbnail a span { transition: opacity 1s linear; -webkit-transition: opacity 1s linear; }
+	
+	#booking-form { display: table; width: 800px; }
+	#booking-form input[type=text],
+	#booking-form input[type=email],
+	#booking-form textarea { width: 790px; padding: 5px; }
+	#booking-form span { display: table; width: auto; }
+	#booking-form .halves,
+	#booking-form .thirds { display: block; clear: both; float: none; }
+	#booking-form .halves span { width: 385px; float: left; margin-right: 10px; }
+	#booking-form .halves input { width: 385px; }
+	#booking-form .thirds span { width: 250px; float: left; margin-right: 10px; }
+	#booking-form .thirds input { width: 250px; }
+	#booking-form .halves span:nth-of-type(2n+2),
+	#booking-form .thirds span:nth-of-type(3n+3) { margin-right: 0px; }
+	#booking-form .campers { display: block; width: 385px; float: left; margin-right: 10px; }
+	#booking-form .visitors { display: block; width: 385px; float: left; clear: right; }
+	#booking-form .campers span,
+	#booking-form .visitors span { width: 385px; }
+	#booking-form .tally span { display: inline; }
+
+	
+	
+}
+
+
+
+/* LARGE LAYOUT */
+@media screen and (min-width: 1080px) {
+	
+	nav#mainmenu, #header_menu h1 { width: 21.875% }
+	
+	#page { width: 70.625%; }
+	
+	.column { width: 30.5%; margin-right: 4%; }
+	.column:nth-of-type(even) { margin-right: 4%; }
+	.column:nth-of-type(3n) { margin-right: 0%; clear: right; }
+	.column:nth-of-type(3n+1) { clear: left; }
+	
+	
+}
+
+/* BOOKING CALENDAR SEARCH RULES */
+
+.booking_search_result_item {
+    display: table;
+    width: 100%;
+}

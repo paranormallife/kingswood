@@ -1,0 +1,33 @@
+/*
+Theme Name: Kingswood 3.0
+Theme URI:
+Author: Elliot Toman
+Author URI: http://asubtleweb.com
+Description: A new custom theme developed for Kingswood Campsite
+Version: 1.0
+License:
+License URI:
+Tags:
+Text Domain:
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,300');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700');
+@import url('css/header.css');
+@import url('css/header_nav.css');
+@import url('css/header_search.css');
+@import url('css/homepage.css');
+@import url('css/page.css');
+@import url('css/booking_search.css');
+@import url('css/footer.css');
+@import url('css/campsites_grid.css');
+@import url('css/map.css');
+@import url('css/booking-form.css');
+
+body {
+  background-color: white;
+  font-family: 'Noto Serif', serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}

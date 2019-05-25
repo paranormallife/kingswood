@@ -1,0 +1,36 @@
+/* Basic Header Styles */
+
+#header-image {
+	background-color: #FF9900;
+	background-position: center center;
+	background-size: cover;
+	display: block;
+	height: 400px;
+	position: static;
+	width: 100vw;
+}
+
+div#breadcrumbs {
+	background-color: black;
+	color: #666666;
+	display: table;
+	padding: 1em 5vw;
+	width: 90%;	
+}
+
+#breadcrumbs a {
+	color: white;
+	display: inline;
+}
+
+#breadcrumbs a:hover {
+	color: orangered;
+}
+
+#breadcrumbs,
+#breadcrumbs a.post-page {
+	font: 1em 'Oswald', sans-serif;
+	margin: 0;
+	text-decoration: none;
+	text-transform: uppercase;
+}

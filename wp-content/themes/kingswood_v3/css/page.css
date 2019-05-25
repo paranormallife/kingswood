@@ -1,0 +1,161 @@
+/* Basic Page Styles */
+
+.post-page {
+	display: table;
+	margin: 0 5vw;
+	width: 90vw;	
+}
+
+.post-page article {
+	margin-bottom: 3em;
+}
+
+.post-page img {
+	height: auto;
+	max-width: 100%;
+}
+
+img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+img.alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+.post-page a {
+	color: orangered;
+	text-decoration: none;
+}
+
+.post-page h1 {
+	font: 400 3em 'Oswald', serif;
+	margin-bottom: 0;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+
+.post-page h2 {
+	font: 300 1.5em 'Oswald', serif;
+	text-transform: uppercase;
+}
+
+
+.post-page .gallery {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.post-page .gallery .gallery-icon {
+	padding-right: 5px;
+}
+
+.post-page .gallery .gallery-item {
+	margin: 0 !important;
+	padding: 0;
+	position: relative;
+	text-align: left !important;
+}
+
+.post-page .gallery .gallery-item img {
+	border: 0 !important;
+}
+
+.post-page .gallery-caption {
+	background-color: rgba(0,0,0,0.5);
+	bottom: 5px;
+	color: white;
+	display: table;
+	left: 0;
+	opacity: 0;
+	padding: 5%;
+	position: absolute;
+	width: auto;
+}
+
+
+ul.camping-options {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+	padding: 0;
+	width: 100%;
+}
+
+ul.camping-options li {
+	background-color: #EEE;
+	flex-basis: 32%;
+	text-align: center;
+}
+
+ul.camping-options h3 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+ul.camping-options p {
+	margin: 0;
+}
+
+ul.camping-options li a {
+	display: block;
+}
+
+ul.camping-options li:hover {
+	background-color: orangered;
+}
+
+ul.camping-options li:hover a {
+	color: white;
+}
+
+.date {
+	color: rgba(0,0,0,0.35);
+}
+
+#blog-list article {
+	border-bottom: 1px dashed #EEE;
+	margin: 1em 0;
+	padding: 1em 0;
+	text-align: justify;	
+}
+
+#blog-archive ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#blog-archive li {
+	font: 300 1.25em 'Oswald', sans-serif;
+	margin: 0 0 1rem 0;
+}
+
+@media screen and ( min-width: 800px ) {
+
+	.post-page {
+		margin: 0 auto;
+		max-width: 1080px;
+	}
+	
+	.post-page .gallery-item:hover .gallery-caption {
+		opacity: 1;
+	}
+	
+	#blog-list {
+		float: left;
+		width: 63.33%;
+	}
+	
+	#blog-archive {
+		float: right;
+		margin: 2em 0 0 0;
+		width: 31.66%;
+	}
+
+}
+

@@ -1,0 +1,172 @@
+/* Homepage Styles */
+
+
+
+.feature.primary-feature {
+	display: block;
+	width: 100%;
+}
+
+.feature.primary-feature a.container {
+	background-position: center center;
+	background-size: cover;
+	color: white;
+	display: block;
+	height: 0;
+	padding: 50% 0 0 0;
+	position: relative;
+	text-decoration: none;
+	width: 100%;
+}
+
+.feature.primary-feature a.container:hover {
+	opacity: 0.90;
+}
+
+.feature.primary-feature .caption {
+	background-color: rgba(0,0,0,0.25);
+	display: table;
+	height: 100%;
+	left: 0;
+	padding: 5%;
+	position: absolute;
+	top: 0;
+	width: 90%;
+}
+
+.feature.primary-feature h2 {
+	display: block;
+	font: 1.5em 'Oswald', sans-serif;
+	font-weight: 400;
+	margin: 0 0 0.5em 0;
+	text-transform: uppercase;
+}
+
+.feature.primary-feature h2 span {
+	display: block;
+	font-weight: 300;
+}
+
+.feature.secondary-feature {
+	display: none;
+}
+
+#mobile-directions {
+	background-color: orangered;
+	color: white;
+	display: table;
+	padding: 5%;
+	width: 90%;
+}
+
+#mobile-directions p.address {
+	display: table;
+	float: left;
+	margin: 0;
+	max-width: 50%;
+}
+
+#mobile-directions a.button {
+	background-color: white;
+	border-bottom: 2px solid rgba(0,0,0,0.10);
+	border-left: 2px solid rgba(0,0,0,0.10);
+	box-sizing: border-box;
+	color: black;
+	display: table;
+	float: right;
+	font: 1em 'Oswald', sans-serif;
+	padding: 0.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#mobile-directions a.button i {
+	color: orangered;
+	margin-right: 0.5em;
+}
+
+
+@media ( min-width: 800px ) {
+	
+	.feature.primary-feature {
+		border-bottom: 1px solid white;
+		float: left;
+		width: 50%;
+	}
+	
+	.feature.primary-feature .caption {
+		height: auto;
+		left: 5%;
+		max-width: 50%;
+		padding: 5%;
+		position: absolute;
+		top: 5%;
+		width: auto;
+	}
+	
+	.feature.primary-feature,
+	.feature.secondary-feature {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+
+	
+	.feature.secondary-feature {
+		display: block;
+		float: left;
+		width: 33.333%;
+	}
+	
+	.feature.secondary-feature a.container {
+		background-position: center center;
+		background-size: cover;
+		color: white;
+		display: block;
+		height: 0;
+		padding-top: 50%;
+		position: relative;
+		text-decoration: none;
+		width: 100%;
+	}
+	
+	.feature.secondary-feature a.container:hover {
+		opacity: 0.90;
+	}
+
+	
+	.feature.secondary-feature .caption {
+		background-color: rgba(0,0,0,0.5);
+		display: table;
+		left: 0;
+		padding: 2.5%;
+		position: absolute;
+		bottom: 0;
+		width: 95%;
+	}
+	
+	.feature.secondary-feature h3 {
+		display: block;
+		font: 1em 'Noto Serif', serif;
+		font-weight: 400;
+		margin: 0;
+	}
+	
+	#mobile-directions {
+		display: none;
+	}
+	
+	#home-1 {
+		clear: left;
+	}
+	
+	#home-1,
+	#home-3,
+	#home-4 {
+		border-right: 1px solid white;
+	}
+	
+	
+
+	
+}
