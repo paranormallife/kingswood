@@ -26,13 +26,13 @@
 
 
 <section id="copyright">
-  <div class="kingswood-logo"><img src="/wp-content/uploads/farmhouse-footer.png" /></div>
+  <div class="kingswood-logo"><img src="<?php echo get_bloginfo('template_url');?>/media/farmhouse-footer.png" /></div>
   <div class="copyright">
 	  <p>&copy; <?php echo date('Y'); ?> Kingswood Campsite</p>
 	  <p>Kingswood Campsite is owned and operated by the New York <a href="http://www.nyac.com/" target="_blank">Annual Conference of the United Methodist Church</a>.</p>
 	  <p>We are one of two camps of the <a href="http://www.nyaccamps.org/" target="_blank">NYAC</a>!</p>
   </div>
-  <div class="umc-logo"><a href="https://www.umc.org" target="_blank" title="United Methodist Church"><img src="/media/umc-logo.svg" alt="United Methodist Church" /></a></div>
+  <div class="umc-logo"><a href="http://www.umc.org" target="_blank" title="United Methodist Church"><img src="<?php echo get_bloginfo('template_url');?>/media/umc-logo.svg" alt="United Methodist Church" /></a></div>
 </section>
 
 
