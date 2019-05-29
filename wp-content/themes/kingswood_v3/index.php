@@ -7,6 +7,7 @@
 	if ( is_home() or is_page('home') ) {
 		echo do_shortcode('[bookingsearch]');
 		get_template_part('homepage');
+		get_template_part('loop');
 	}
 	
 	elseif ( is_page('campsites') ) {
