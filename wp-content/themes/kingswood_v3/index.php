@@ -21,7 +21,12 @@
 	
 	elseif ( is_search() ) {
 		get_template_part('loop_search');
-	} 
+	}
+
+	elseif ( is_page('availability') ) {
+		echo do_shortcode('[bookingsearch]');
+		get_template_part('loop');
+	}
 	
 	elseif ( is_page('blog') ) {
 		get_template_part('loop-blog');
