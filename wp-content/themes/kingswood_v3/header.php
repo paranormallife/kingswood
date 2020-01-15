@@ -7,7 +7,7 @@
 <meta property="og:title" content="<?php bloginfo('name'); ?>: <?php the_title(); ?>"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="<?php bloginfo('url'); ?>"/>
-<meta property="og:image" content="" />
+<meta property="og:image" content="<?php echo get_the_post_thumbnail_url( 35, 'large'); ?>" />
 <meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
 <meta property="og:description" content="<?php bloginfo('description'); ?>"/>
 
