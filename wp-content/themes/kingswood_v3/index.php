@@ -4,7 +4,7 @@
 
 <?php
 
-	if ( is_home() or is_page('home') ) {
+	if ( is_home() or is_front_page() ) {
 		echo do_shortcode('[bookingsearch]');
 		get_template_part('homepage');
 		get_template_part('loop');
