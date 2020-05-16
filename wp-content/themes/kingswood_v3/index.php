@@ -11,6 +11,7 @@
 	}
 	
 	elseif ( is_page('campsites') ) {
+		echo do_shortcode('[bookingsearch searchresults="https://kingswoodcampsite.org/availability"]');
 		get_template_part('loop');
 		get_template_part('loop_campsites');
 	}
