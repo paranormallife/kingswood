@@ -230,4 +230,26 @@ class Menu_With_Description extends Walker_Nav_Menu {
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
 }
+
+
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function the_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Homepage Top',
+		'id'            => 'homepage_top',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 style="display: none">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'the_widgets_init' );
+
+
 ?>
