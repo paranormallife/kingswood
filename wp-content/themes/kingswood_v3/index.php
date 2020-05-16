@@ -26,7 +26,7 @@
 
 	elseif ( is_page('availability') ) {
 		echo do_shortcode('[bookingsearch]');
-		echo do_shortcode('[bookingsearchresults]');
+		echo '<div class="booking_search_ajax_container">'.do_shortcode('[bookingsearchresults]').'</div>';
 		get_template_part('loop');
 	}
 	
