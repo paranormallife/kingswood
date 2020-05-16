@@ -4,10 +4,10 @@
 
 <?php
 
-	if ( is_home() or is_page('home') ) {
+	if ( is_home() or is_front_page() ) {
 		echo do_shortcode('[bookingsearch]');
 		get_template_part('homepage');
-		get_template_part('loop');
+		// get_template_part('loop');
 	}
 	
 	elseif ( is_page('campsites') ) {
@@ -21,7 +21,12 @@
 	
 	elseif ( is_search() ) {
 		get_template_part('loop_search');
-	} 
+	}
+
+	elseif ( is_page('availability') ) {
+		echo do_shortcode('[bookingsearch]');
+		get_template_part('loop');
+	}
 	
 	elseif ( is_page('blog') ) {
 		get_template_part('loop-blog');

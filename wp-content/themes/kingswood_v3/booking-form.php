@@ -16,7 +16,7 @@
 		{select-day condition="weekday" for="4" value="7,14,21"}
 		{select-day condition="weekday" for="5" value="7,14,21"}
 		{select-day condition="weekday" for="6" value="999"}
-		" startmonth="2017-06"]');
+		" startmonth="2020-06"]');
 
 	?>
 
