@@ -5,13 +5,11 @@
 <?php
 
 	if ( is_home() or is_front_page() ) {
-		echo do_shortcode('[bookingsearch]');
 		get_template_part('homepage');
 		// get_template_part('loop');
 	}
 	
 	elseif ( is_page('campsites') ) {
-		echo do_shortcode('[bookingsearch searchresults="https://kingswoodcampsite.org/availability"]');
 		get_template_part('loop');
 		get_template_part('loop_campsites');
 	}
@@ -25,10 +23,6 @@
 	}
 
 	elseif ( is_page('availability') ) {
-		echo do_shortcode('[bookingsearch]');
-		echo '<div class="booking_search_ajax_container">';
-			do_shortcode('[bookingsearchresults]');
-		echo '</div>';
 		get_template_part('loop');
 	}
 	
