@@ -5,8 +5,8 @@
 <?php
 
 	if ( is_home() or is_front_page() ) {
-		get_template_part('bys_mini');
 		get_template_part('homepage');
+		get_template_part('bys_mini');
 		get_template_part('loop');
 	}
 	
