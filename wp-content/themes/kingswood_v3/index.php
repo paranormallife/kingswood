@@ -28,6 +28,7 @@
 	}
 
 	elseif ( is_page('availability') ) {
+		get_template_part('bys_booking');
 		get_template_part('loop');
 	}
 	
