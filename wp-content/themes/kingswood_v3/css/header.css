@@ -14,8 +14,8 @@ div#breadcrumbs {
 	background-color: black;
 	color: #666666;
 	display: table;
-	padding: 1em 5vw;
-	width: 90%;	
+	padding: 1em 5%;
+	width: 100%;	
 }
 
 #breadcrumbs a {
