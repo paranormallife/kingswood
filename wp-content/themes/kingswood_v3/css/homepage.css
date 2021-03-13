@@ -92,10 +92,12 @@
 }
 
 .bys-mini iframe {
-	border: 0;
-	margin: 20px auto;
-	max-width: 800px;
-	width: 90%;
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    max-width: 800px;
+    min-height: 400px;
+    width: 90%;
 }
 
 @media ( min-width: 800px ) {
