@@ -244,7 +244,7 @@ function the_widgets_init() {
 		'id'            => 'homepage_content',
 		'before_widget' => '<div class="homepage-content-block">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2">',
+		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 	) );
 
