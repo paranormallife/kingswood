@@ -19,7 +19,7 @@ ul.header-nav {
 	padding: 1em 5vw;
 	position: absolute;
 	top: 0;
-	width: 90vw;
+	width: 100%;
 }
 
 ul.header-nav.active {

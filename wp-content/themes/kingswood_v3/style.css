@@ -24,6 +24,10 @@ Text Domain:
 @import url('css/map.css');
 @import url('css/booking-form.css');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
   font-family: 'Noto Serif', serif;

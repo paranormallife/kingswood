@@ -85,6 +85,18 @@
 	margin-right: 0.5em;
 }
 
+.bys-mini {
+	background: white;
+	display: table;
+	width: 100%;
+}
+
+.bys-mini iframe {
+	border: 0;
+	margin: 20px auto;
+	max-width: 800px;
+	width: 90%;
+}
 
 @media ( min-width: 800px ) {
 	
