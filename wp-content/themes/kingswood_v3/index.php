@@ -7,6 +7,11 @@
 	if ( is_home() or is_front_page() ) {
 		get_template_part('homepage');
 		// get_template_part('bys_mini');
+		if( is_active_sidebar( 'homepage_content' ) ) {
+			echo '<section class="homepage-content">';
+				dynamic_sidebar( 'homepage_content' );
+			echo '</section>';
+		}
 	}
 	
 	elseif ( is_page('campsites') ) {

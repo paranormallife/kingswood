@@ -85,7 +85,8 @@
 	margin-right: 0.5em;
 }
 
-.bys-mini {
+.bys-mini,
+.homepage-content {
 	background: white;
 	display: table;
 	width: 100%;
@@ -98,6 +99,13 @@
     max-width: 800px;
     min-height: 400px;
     width: 90%;
+}
+
+.homepage-content-block {
+	display: table;
+	margin: 50px auto;
+	max-width: 1080px;
+	width: 90%;
 }
 
 @media ( min-width: 800px ) {

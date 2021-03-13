@@ -240,11 +240,11 @@ class Menu_With_Description extends Walker_Nav_Menu {
 function the_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => 'Homepage Top',
-		'id'            => 'homepage_top',
-		'before_widget' => '<div>',
+		'name'          => 'Homepage Content',
+		'id'            => 'homepage_content',
+		'before_widget' => '<div class="homepage-content-block">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 style="display: none">',
+		'before_title'  => '<h2">',
 		'after_title'   => '</h2>',
 	) );
 
